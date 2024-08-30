@@ -9,8 +9,12 @@ import img7 from "../assets/img/7.jpg"
 import img8 from "../assets/img/8.jpg"
 import img9 from "../assets/img/9.jpg"
 import img10 from "../assets/img/10.jpg"
+import { Navigate, useNavigate } from "react-router-dom"
 
 export default function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <>
 
@@ -52,7 +56,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-4">
 
           {/* places */}
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img1} alt="" className="object-cover h-[inherit] w-[inherit]"/>
             </div>
@@ -66,7 +70,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img2} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -80,7 +84,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img3} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -94,7 +98,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img4} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -108,7 +112,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img5} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -122,7 +126,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img6} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -136,7 +140,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img7} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
@@ -150,9 +154,37 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden relative rounded-lg">
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
             <div className="h-52">
               <img src={img8} alt="" className="object-cover h-[inherit] w-full"/>
+            </div>
+            <div className="img-grad z-10 absolute top-0 w-full h-52">
+              <div className="flex p-2 justify-left items-end h-[inherit]">
+                  <div className="text-white">
+                    <h3>Gopalpur</h3>
+                    <p className="text-xs text-gray-300">berhampur, odisha</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
+            <div className="h-52">
+              <img src={img9} alt="" className="object-cover h-[inherit] w-full"/>
+            </div>
+            <div className="img-grad z-10 absolute top-0 w-full h-52">
+              <div className="flex p-2 justify-left items-end h-[inherit]">
+                  <div className="text-white">
+                    <h3>Gopalpur</h3>
+                    <p className="text-xs text-gray-300">berhampur, odisha</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden relative rounded-lg" onClick={() => navigate("/place")}>
+            <div className="h-52">
+              <img src={img10} alt="" className="object-cover h-[inherit] w-full"/>
             </div>
             <div className="img-grad z-10 absolute top-0 w-full h-52">
               <div className="flex p-2 justify-left items-end h-[inherit]">
