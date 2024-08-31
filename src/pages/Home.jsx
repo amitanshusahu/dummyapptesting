@@ -15,6 +15,12 @@ export default function Home() {
 
   const navigate = useNavigate();
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      navigate("/search");
+    }
+  };
+
   return (
     <>
 
@@ -23,7 +29,8 @@ export default function Home() {
           <p className=" text-gray-500">Hi, Amitanshu</p>
           <p className=" text-lg">Where are we going ?</p>
         </div>
-        <div className=" shadow-lg p-2 rounded-lg border border-gray-100">
+        <div className=" shadow-lg p-2 rounded-lg border border-gray-100"
+        onClick={() => navigate("/notification")}>
           <BellIcon />
         </div>
       </div>
@@ -31,7 +38,8 @@ export default function Home() {
       {/* // search */}
       <div className="m-4 my-8 relative">
         <input type="search" placeholder="Search Destinations"
-          className="border p-4 rounded-lg w-full" />
+          className="border p-4 rounded-lg w-full" 
+          onKeyDown={handleKeyDown} />
         <span className="p-1 absolute right-4 top-4"><MicIcon /></span>
       </div>
 
