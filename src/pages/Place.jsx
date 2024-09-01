@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { LocationIcon } from "../assets/Icon"
-import img1 from "../assets/img/1.jpeg"
+import img1 from "../assets/img/9.jpg"
 import Insights from "../components/Insights";
 import Explore from "../components/Explore";
 import Reviews from "../components/Reviews";
@@ -30,7 +30,7 @@ export default function Place() {
           <p className="text-gray-400 flex items-center gap-1"> <LocationIcon size="4" /> Gopalpur, odisha</p>
         </div>
         <div>
-          <button className="blue text-white p-2 rounded-lg" onClick={() => navigate("/go")}>Go</button>
+          <button className="blue text-white p-2 px-3 font-bold rounded-lg" onClick={() => navigate("/go")}>Go</button>
         </div>
       </div>
 

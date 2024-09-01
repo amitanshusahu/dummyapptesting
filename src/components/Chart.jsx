@@ -27,7 +27,7 @@ const TideBarChart = () => {
         {/* <YAxis label={{ value: 'Tide Height (m)', angle: -90, position: 'insideLeft' }} /> */}
         <Tooltip />
         <Legend />
-        <Bar dataKey="Tide_Height" fill="#588dff" />
+        <Bar dataKey="Tide_Height" fill="#87CEEB" radius={[5, 5, 0, 0]}/>
       </BarChart>
     </ResponsiveContainer>
   );
